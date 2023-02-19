@@ -7,8 +7,6 @@ module.exports = defineConfig({
     },
   },
   env: {
-    TEST_ENV: "development",
-    DEV_SITE: "https://www.saucedemo.com/",
-    UAT_SITE: "https://www.saucedemo.com/",
+    SITE: "https://www.saucedemo.com/",
   },
 });

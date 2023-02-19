@@ -3,11 +3,7 @@ const password = "secret_sauce";
 
 describe("Check login functionalities", () => {
   beforeEach(() => {
-    cy.visit(
-      Cypress.env("TEST_ENV") === "development"
-        ? Cypress.env("DEV_SITE")
-        : Cypress.env("UAT_SITE")
-    );
+    cy.visit(Cypress.env("SITE"));
   });
 
   it("Verifies page", () => {
